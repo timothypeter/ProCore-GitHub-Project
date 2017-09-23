@@ -8,5 +8,5 @@ target 'ProCore GitHub Project' do
   # Pods for ProCore GitHub Project
   
   pod 'Alamofire', '~> 4.5'
-
+  pod 'SwiftyJSON'
 end

@@ -68,16 +68,22 @@
 		2A77994D1F75FA4B00CB6DC9 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				2A77994E1F75FADE00CB6DC9 /* Router.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		2A85A7D21F76337900D45E49 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				2A77994E1F75FADE00CB6DC9 /* Router.swift */,
+			);
+			path = Network;
 			sourceTree = "<group>";
 		};
 		2A96C75B1F75F4F500D54AB2 = {
 			isa = PBXGroup;
 			children = (
 				2A96C7661F75F4F500D54AB2 /* ProCore GitHub Project */,
-				2A77994D1F75FA4B00CB6DC9 /* Model */,
 				2A96C7651F75F4F500D54AB2 /* Products */,
 				A667CEBF1F554A3DCD73652F /* Pods */,
 				19A366E063551B9285CC1467 /* Frameworks */,
@@ -95,11 +101,13 @@
 		2A96C7661F75F4F500D54AB2 /* ProCore GitHub Project */ = {
 			isa = PBXGroup;
 			children = (
+				2A85A7D21F76337900D45E49 /* Network */,
 				2A96C7671F75F4F500D54AB2 /* AppDelegate.swift */,
 				2A96C76B1F75F4F500D54AB2 /* Main.storyboard */,
 				2A96C76E1F75F4F500D54AB2 /* Assets.xcassets */,
 				2A96C7701F75F4F500D54AB2 /* LaunchScreen.storyboard */,
 				2A96C7731F75F4F500D54AB2 /* Info.plist */,
+				2A77994D1F75FA4B00CB6DC9 /* Model */,
 				2A77994B1F75FA2100CB6DC9 /* View */,
 				2A77994C1F75FA3300CB6DC9 /* Controller */,
 			);
@@ -194,10 +202,12 @@
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-ProCore GitHub Project/Pods-ProCore GitHub Project-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;

@@ -6,7 +6,6 @@ import Alamofire
 
 public enum Router: URLRequestConvertible {
     static let baseURLPath = "https://api.github.com"
-    static let authenticationToken = "Basic xxx"
     static let githubAcceptStringV3 = "application/vnd.github.v3+json"
     
     case getPullRequests(parameters: Parameters)
@@ -23,7 +22,7 @@ public enum Router: URLRequestConvertible {
         switch self {
         case .getPullRequests:
             //example "/users/(username)"
-            return "/repos/timothypeter/ProCore-Demo"
+            return "/repos/Alamofire/Alamofire"
         }
     }
     
@@ -41,6 +40,8 @@ public enum Router: URLRequestConvertible {
             default:
                 break
         }
+        
+        urlRequest.setValue(Router.githubAcceptStringV3, forHTTPHeaderField: "Accept")
         
         /*
         let url = try Router.baseURLPath.asURL()

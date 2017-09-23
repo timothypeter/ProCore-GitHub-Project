@@ -13,7 +13,7 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        let dict = [String: String]()
+        let dict = ["state" : "open"]
         
         //Testing the call to retrieve pull requests
         Alamofire.request(Router.getPullRequests(parameters: dict)).response {response in
