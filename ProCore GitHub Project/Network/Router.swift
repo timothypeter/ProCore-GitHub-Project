@@ -22,7 +22,7 @@ public enum Router: URLRequestConvertible {
         switch self {
         case .getPullRequests:
             //example "/users/(username)"
-            return "/repos/Alamofire/Alamofire"
+            return "/repos/Alamofire/Alamofire/issues"
         }
     }
     

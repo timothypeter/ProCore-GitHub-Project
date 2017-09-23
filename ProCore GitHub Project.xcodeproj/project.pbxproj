@@ -50,13 +50,6 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		2A77994B1F75FA2100CB6DC9 /* View */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = View;
-			sourceTree = "<group>";
-		};
 		2A77994C1F75FA3300CB6DC9 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
@@ -108,7 +101,6 @@
 				2A96C7701F75F4F500D54AB2 /* LaunchScreen.storyboard */,
 				2A96C7731F75F4F500D54AB2 /* Info.plist */,
 				2A77994D1F75FA4B00CB6DC9 /* Model */,
-				2A77994B1F75FA2100CB6DC9 /* View */,
 				2A77994C1F75FA3300CB6DC9 /* Controller */,
 			);
 			path = "ProCore GitHub Project";
