@@ -21,6 +21,7 @@ class ViewController: UIViewController {
             print("Response: \(String(describing: response.response))")
             print("Error: \(String(describing: response.error))")
             
+            //Print Data from response
             if let data = response.data, let utf8Text = String(data: data, encoding: .utf8){
                 print("Data: \(utf8Text)")
             }
