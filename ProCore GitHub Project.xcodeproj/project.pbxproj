@@ -7,14 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2A77994F1F75FADE00CB6DC9 /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A77994E1F75FADE00CB6DC9 /* Router.swift */; };
 		2A96C7681F75F4F500D54AB2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A96C7671F75F4F500D54AB2 /* AppDelegate.swift */; };
 		2A96C76A1F75F4F500D54AB2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A96C7691F75F4F500D54AB2 /* ViewController.swift */; };
 		2A96C76D1F75F4F500D54AB2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2A96C76B1F75F4F500D54AB2 /* Main.storyboard */; };
 		2A96C76F1F75F4F500D54AB2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2A96C76E1F75F4F500D54AB2 /* Assets.xcassets */; };
 		2A96C7721F75F4F500D54AB2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2A96C7701F75F4F500D54AB2 /* LaunchScreen.storyboard */; };
+		E285A5A709D6AA084B972AEF /* Pods_ProCore_GitHub_Project.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 162DBBD226732D8E0C4F8DA6 /* Pods_ProCore_GitHub_Project.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		162DBBD226732D8E0C4F8DA6 /* Pods_ProCore_GitHub_Project.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ProCore_GitHub_Project.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2A77994E1F75FADE00CB6DC9 /* Router.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
 		2A96C7641F75F4F500D54AB2 /* ProCore GitHub Project.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ProCore GitHub Project.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2A96C7671F75F4F500D54AB2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2A96C7691F75F4F500D54AB2 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +26,8 @@
 		2A96C76E1F75F4F500D54AB2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2A96C7711F75F4F500D54AB2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2A96C7731F75F4F500D54AB2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4D7B27E0AFBA8D6948D70691 /* Pods-ProCore GitHub Project.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ProCore GitHub Project.release.xcconfig"; path = "Pods/Target Support Files/Pods-ProCore GitHub Project/Pods-ProCore GitHub Project.release.xcconfig"; sourceTree = "<group>"; };
+		7F6A05A78F5814649A0C7184 /* Pods-ProCore GitHub Project.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ProCore GitHub Project.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ProCore GitHub Project/Pods-ProCore GitHub Project.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +35,52 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E285A5A709D6AA084B972AEF /* Pods_ProCore_GitHub_Project.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		19A366E063551B9285CC1467 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				162DBBD226732D8E0C4F8DA6 /* Pods_ProCore_GitHub_Project.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		2A77994B1F75FA2100CB6DC9 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		2A77994C1F75FA3300CB6DC9 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				2A96C7691F75F4F500D54AB2 /* ViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		2A77994D1F75FA4B00CB6DC9 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				2A77994E1F75FADE00CB6DC9 /* Router.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		2A96C75B1F75F4F500D54AB2 = {
 			isa = PBXGroup;
 			children = (
 				2A96C7661F75F4F500D54AB2 /* ProCore GitHub Project */,
+				2A77994D1F75FA4B00CB6DC9 /* Model */,
 				2A96C7651F75F4F500D54AB2 /* Products */,
+				A667CEBF1F554A3DCD73652F /* Pods */,
+				19A366E063551B9285CC1467 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -55,13 +96,23 @@
 			isa = PBXGroup;
 			children = (
 				2A96C7671F75F4F500D54AB2 /* AppDelegate.swift */,
-				2A96C7691F75F4F500D54AB2 /* ViewController.swift */,
 				2A96C76B1F75F4F500D54AB2 /* Main.storyboard */,
 				2A96C76E1F75F4F500D54AB2 /* Assets.xcassets */,
 				2A96C7701F75F4F500D54AB2 /* LaunchScreen.storyboard */,
 				2A96C7731F75F4F500D54AB2 /* Info.plist */,
+				2A77994B1F75FA2100CB6DC9 /* View */,
+				2A77994C1F75FA3300CB6DC9 /* Controller */,
 			);
 			path = "ProCore GitHub Project";
+			sourceTree = "<group>";
+		};
+		A667CEBF1F554A3DCD73652F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				7F6A05A78F5814649A0C7184 /* Pods-ProCore GitHub Project.debug.xcconfig */,
+				4D7B27E0AFBA8D6948D70691 /* Pods-ProCore GitHub Project.release.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,9 +122,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2A96C7761F75F4F500D54AB2 /* Build configuration list for PBXNativeTarget "ProCore GitHub Project" */;
 			buildPhases = (
+				16BABCC91E6260981516BC5D /* [CP] Check Pods Manifest.lock */,
 				2A96C7601F75F4F500D54AB2 /* Sources */,
 				2A96C7611F75F4F500D54AB2 /* Frameworks */,
 				2A96C7621F75F4F500D54AB2 /* Resources */,
+				10DC6C2CDD10CFB06EC2B6FE /* [CP] Embed Pods Frameworks */,
+				9AA2DB51098896AA6F75ED99 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -131,12 +185,67 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		10DC6C2CDD10CFB06EC2B6FE /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-ProCore GitHub Project/Pods-ProCore GitHub Project-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ProCore GitHub Project/Pods-ProCore GitHub Project-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		16BABCC91E6260981516BC5D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ProCore GitHub Project-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9AA2DB51098896AA6F75ED99 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ProCore GitHub Project/Pods-ProCore GitHub Project-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		2A96C7601F75F4F500D54AB2 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				2A96C76A1F75F4F500D54AB2 /* ViewController.swift in Sources */,
+				2A77994F1F75FADE00CB6DC9 /* Router.swift in Sources */,
 				2A96C7681F75F4F500D54AB2 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -272,9 +381,11 @@
 		};
 		2A96C7771F75F4F500D54AB2 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7F6A05A78F5814649A0C7184 /* Pods-ProCore GitHub Project.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 4M6DBQ9CQX;
 				INFOPLIST_FILE = "ProCore GitHub Project/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "Timothy-Peter.ProCore-GitHub-Project";
@@ -286,9 +397,11 @@
 		};
 		2A96C7781F75F4F500D54AB2 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4D7B27E0AFBA8D6948D70691 /* Pods-ProCore GitHub Project.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 4M6DBQ9CQX;
 				INFOPLIST_FILE = "ProCore GitHub Project/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "Timothy-Peter.ProCore-GitHub-Project";

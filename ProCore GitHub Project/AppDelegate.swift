@@ -2,7 +2,7 @@
 //  AppDelegate.swift
 //  ProCore GitHub Project
 //
-//  Created by Adrienn Peter on 9/22/17.
+//  Created by Timothy on 9/22/17.
 //  Copyright © 2017 Timothy Peter. All rights reserved.
 //
 
