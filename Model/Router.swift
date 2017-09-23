@@ -22,8 +22,8 @@ public enum Router: URLRequestConvertible {
     var path: String {
         switch self {
         case .getPullRequests:
-            return "/content"
-
+            //example "/users/(username)"
+            return "/repos/timothypeter/ProCore-Demo"
         }
     }
     
@@ -37,6 +37,7 @@ public enum Router: URLRequestConvertible {
         switch self {
             case .getPullRequests(let parameters):
                 urlRequest = try URLEncoding.default.encode(urlRequest, with:  parameters)
+            print(urlRequest)
             default:
                 break
         }
