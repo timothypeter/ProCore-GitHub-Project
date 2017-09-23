@@ -53,13 +53,7 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
                 
                 print(json)
                 
-                //if let issues_url = json["labels"].array{
-                   // print(issues_url)
-               // }
-                
                 self.tableView.reloadData()
-                
-               // let pull_requests = json["pull_request"].arrayValue.map({$0["diff_url"].stringValue})
             }
         }
     }
@@ -71,14 +65,20 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
-        var cell:UITableViewCell = UITableViewCell()
+        let cell:UITableViewCell = UITableViewCell()
         
         let dictionary = arrayOfDictsOfIssues[indexPath.row]["pull_request"]
         
         let stringForTitle = dictionary!["url"].stringValue
         
+        if let range = stringForTitle.range(of: "pulls/"){
+            //TODO: Replace with Swift 4 equivalent
+            let newString = stringForTitle.substring(from: range.upperBound)
+            cell.textLabel?.text = newString
+        }
+        
         //if let stringForTitle: String = arrayOfDictsOfIssues[indexPath.row]["pull_request"]?.stringValue{
-            cell.textLabel?.text = stringForTitle
+        
        // }
         
         
