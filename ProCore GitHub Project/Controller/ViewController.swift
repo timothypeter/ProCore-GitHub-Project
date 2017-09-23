@@ -15,6 +15,7 @@ class ViewController: UIViewController {
 
         let dict = [String: String]()
         
+        //Testing the call to retrieve pull requests
         Alamofire.request(Router.getPullRequests(parameters: dict))
     }
 }
