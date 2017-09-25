@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		2A77994F1F75FADE00CB6DC9 /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A77994E1F75FADE00CB6DC9 /* Router.swift */; };
+		2A85A7D41F77716E00D45E49 /* SplitViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A85A7D31F77716E00D45E49 /* SplitViewController.swift */; };
+		2A85A7D61F78AA4300D45E49 /* DiffViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A85A7D51F78AA4300D45E49 /* DiffViewController.swift */; };
 		2A96C7681F75F4F500D54AB2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A96C7671F75F4F500D54AB2 /* AppDelegate.swift */; };
 		2A96C76A1F75F4F500D54AB2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A96C7691F75F4F500D54AB2 /* ViewController.swift */; };
 		2A96C76D1F75F4F500D54AB2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2A96C76B1F75F4F500D54AB2 /* Main.storyboard */; };
@@ -19,6 +21,8 @@
 /* Begin PBXFileReference section */
 		162DBBD226732D8E0C4F8DA6 /* Pods_ProCore_GitHub_Project.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ProCore_GitHub_Project.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2A77994E1F75FADE00CB6DC9 /* Router.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
+		2A85A7D31F77716E00D45E49 /* SplitViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplitViewController.swift; sourceTree = "<group>"; };
+		2A85A7D51F78AA4300D45E49 /* DiffViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiffViewController.swift; sourceTree = "<group>"; };
 		2A96C7641F75F4F500D54AB2 /* ProCore GitHub Project.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ProCore GitHub Project.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2A96C7671F75F4F500D54AB2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2A96C7691F75F4F500D54AB2 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -54,6 +58,8 @@
 			isa = PBXGroup;
 			children = (
 				2A96C7691F75F4F500D54AB2 /* ViewController.swift */,
+				2A85A7D31F77716E00D45E49 /* SplitViewController.swift */,
+				2A85A7D51F78AA4300D45E49 /* DiffViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -247,8 +253,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				2A96C76A1F75F4F500D54AB2 /* ViewController.swift in Sources */,
+				2A85A7D61F78AA4300D45E49 /* DiffViewController.swift in Sources */,
 				2A77994F1F75FADE00CB6DC9 /* Router.swift in Sources */,
 				2A96C7681F75F4F500D54AB2 /* AppDelegate.swift in Sources */,
+				2A85A7D41F77716E00D45E49 /* SplitViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
