@@ -91,6 +91,12 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        
+        if let dictionary = arrayOfDictsOfIssues[indexPath.row]["pull_request"]
+        {
+            self.jsonDictionaryWithDiff = dictionary
+        }
+        
         self.performSegue(withIdentifier: "PUSHDIFFVC", sender: self)
     }
     
