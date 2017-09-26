@@ -43,15 +43,6 @@ public enum Router: URLRequestConvertible {
         
         urlRequest.setValue(Router.githubAcceptStringV3, forHTTPHeaderField: "Accept")
         
-        /*
-        let url = try Router.baseURLPath.asURL()
-        
-        var request = URLRequest(url: url.appendingPathComponent(path))
-        request.httpMethod = method.rawValue
-        request.setValue(Router.authenticationToken, forHTTPHeaderField: "Authorization")
-        request.timeoutInterval = TimeInterval(10 * 1000)
- */
-        
         return urlRequest
     }
 }

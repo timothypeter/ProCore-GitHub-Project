@@ -1,5 +1,5 @@
 //
-//  DiffViewController.swift
+//  LeftViewController.swift
 //  ProCore GitHub Project
 //
 //  Created by Timothy Peter on 9/24/17.
@@ -11,7 +11,7 @@ import UIKit
 import SwiftyJSON
 import Alamofire
 
-class DiffViewController: UIViewController{
+class LeftViewController: UIViewController{
     
     @IBOutlet var textView: UITextView!
     var diffInfoAsJSON: JSON = JSON.null
@@ -26,9 +26,9 @@ class DiffViewController: UIViewController{
             let url = URL(string: stringToUse)
             
             let request = URLRequest(url: url!)
-
-            Alamofire.request(stringToUse).responseJSON { response in
             
+            Alamofire.request(stringToUse).responseJSON { response in
+                
                 print("Response: \(String(describing: response.response))")
                 
                 if let json = response.result.value{
@@ -59,3 +59,4 @@ class DiffViewController: UIViewController{
         }
     }
 }
+
