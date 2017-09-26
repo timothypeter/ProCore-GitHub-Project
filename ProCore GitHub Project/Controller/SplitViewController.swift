@@ -20,8 +20,14 @@ class SplitViewController: UIViewController{
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?){
         if(segue.identifier == "SHOWDIFFVC"){
-            var diffViewController: DiffViewController = segue.destination as! DiffViewController
+            let diffViewController: DiffViewController = segue.destination as! DiffViewController
             diffViewController.diffInfoAsJSON = self.diffInfoAsJSON
+        }
+        
+        else
+        {
+            let leftViewController: LeftViewController = segue.destination as! LeftViewController
+            leftViewController.diffInfoAsJSON = self.diffInfoAsJSON
         }
     }
 }

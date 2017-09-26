@@ -47,8 +47,8 @@ class LeftViewController: UIViewController{
                     
                     for files in self.diff.files{
                         for hunk in files.hunks{
-                            for rightLine in hunk.rightLines{
-                                stringForTextField += "\(rightLine)\n"
+                            for leftLine in hunk.leftLines{
+                                stringForTextField += "\(leftLine)\n"
                             }
                         }
                     }

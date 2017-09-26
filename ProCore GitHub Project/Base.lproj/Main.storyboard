@@ -52,7 +52,7 @@
                             <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="49k-3a-h0S">
                                 <rect key="frame" x="0.0" y="64" width="187" height="603"/>
                                 <connections>
-                                    <segue destination="icR-KI-AM6" kind="embed" id="05Y-6v-hRK"/>
+                                    <segue destination="icR-KI-AM6" kind="embed" identifier="SHOWLEFTVC" id="05Y-6v-hRK"/>
                                 </connections>
                             </containerView>
                             <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hVs-5k-fW4">
@@ -124,10 +124,10 @@
             </objects>
             <point key="canvasLocation" x="-463" y="90"/>
         </scene>
-        <!--View Controller-->
+        <!--Left View Controller-->
         <scene sceneID="Mbc-Wr-fx2">
             <objects>
-                <viewController id="icR-KI-AM6" sceneMemberID="viewController">
+                <viewController id="icR-KI-AM6" customClass="LeftViewController" customModule="ProCore_GitHub_Project" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="2CM-8F-yon">
                         <rect key="frame" x="0.0" y="0.0" width="187" height="603"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -141,9 +141,11 @@
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                         </subviews>
-                        <color key="backgroundColor" red="0.096237548340000006" green="0.16433222149999999" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="omo-TR-zs1"/>
                     </view>
+                    <connections>
+                        <outlet property="textView" destination="u4g-Xz-GJf" id="YA0-zs-DiJ"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hvc-MD-9Oj" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -165,7 +167,6 @@
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                         </subviews>
-                        <color key="backgroundColor" red="1" green="0.1392177332" blue="0.26148221970000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="klb-Vl-NyE" firstAttribute="top" secondItem="2Yc-O7-MpZ" secondAttribute="topMargin" constant="-34" id="6cO-WW-yDE"/>
                             <constraint firstItem="klb-Vl-NyE" firstAttribute="leading" secondItem="2Yc-O7-MpZ" secondAttribute="leading" id="DtI-Wy-p19"/>
