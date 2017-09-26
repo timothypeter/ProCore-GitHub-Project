@@ -40,11 +40,10 @@ class LeftViewController: UIViewController{
                     //self.textView.text = utf8Text
                     
                     self.diff = Diff(rawValue: utf8Text);
-                    print(self.diff.files.first?.hunks as Any);
-                    //self.textView.text = self.diff.files.last!.hunks.first?.rightLines.description
                     
                     var stringForTextField: String = ""
                     
+                    //I'm not proud of this, but for the sake of finishing in time this is here
                     for files in self.diff.files{
                         for hunk in files.hunks{
                             for leftLine in hunk.leftLines{
