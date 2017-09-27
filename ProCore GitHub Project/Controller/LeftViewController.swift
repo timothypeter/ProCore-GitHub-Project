@@ -19,7 +19,7 @@ class LeftViewController: UIViewController{
     
     override func viewDidLoad() {
         if(diffInfoAsJSON != JSON.null){
-            self.textView.text = diffInfoAsJSON["diff_url"].stringValue
+            self.textView.text = "Loading..."
             
             let stringToUse: String = diffInfoAsJSON["diff_url"].stringValue
             
