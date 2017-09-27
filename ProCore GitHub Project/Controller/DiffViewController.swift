@@ -39,7 +39,7 @@ class DiffViewController: UIViewController{
                     print("Data: \(utf8Text)") //original server data as UTF8 string
                     //self.textView.text = utf8Text
                     
-                    self.diff = Diff(rawValue: utf8Text);
+                    self.diff = Diff(rawValue: utf8Text)
                     print(self.diff.files.first?.hunks as Any);
                     //self.textView.text = self.diff.files.last!.hunks.first?.rightLines.description
                     
@@ -49,6 +49,11 @@ class DiffViewController: UIViewController{
                         for hunk in files.hunks{
                             for rightLine in hunk.rightLines{
                                 stringForTextField += "\(rightLine)\n"
+                                
+                               // let blueForegroundColorAttribute = [ NSAttributedStringKey.foregroundColor: UIColor.green ]
+                              //  let myAttrString = NSAttributedString(string: rightLine + "\n", attributes: blueForegroundColorAttribute)
+                                
+                               // stringForTextField += myAttrString
                             }
                         }
                     }

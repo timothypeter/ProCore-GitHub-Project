@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		2A4CD6101F7A252C0011757A /* GitHub.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A4CD60F1F7A252C0011757A /* GitHub.swift */; };
 		2A4CD6121F7A3BB80011757A /* LeftViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A4CD6111F7A3BB80011757A /* LeftViewController.swift */; };
+		2A4CD6151F7B42B40011757A /* Globals.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A4CD6141F7B42B40011757A /* Globals.swift */; };
 		2A77994F1F75FADE00CB6DC9 /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A77994E1F75FADE00CB6DC9 /* Router.swift */; };
 		2A85A7D41F77716E00D45E49 /* SplitViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A85A7D31F77716E00D45E49 /* SplitViewController.swift */; };
 		2A85A7D61F78AA4300D45E49 /* DiffViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A85A7D51F78AA4300D45E49 /* DiffViewController.swift */; };
@@ -24,6 +25,7 @@
 		162DBBD226732D8E0C4F8DA6 /* Pods_ProCore_GitHub_Project.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ProCore_GitHub_Project.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2A4CD60F1F7A252C0011757A /* GitHub.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GitHub.swift; sourceTree = "<group>"; };
 		2A4CD6111F7A3BB80011757A /* LeftViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeftViewController.swift; sourceTree = "<group>"; };
+		2A4CD6141F7B42B40011757A /* Globals.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Globals.swift; sourceTree = "<group>"; };
 		2A77994E1F75FADE00CB6DC9 /* Router.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
 		2A85A7D31F77716E00D45E49 /* SplitViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplitViewController.swift; sourceTree = "<group>"; };
 		2A85A7D51F78AA4300D45E49 /* DiffViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiffViewController.swift; sourceTree = "<group>"; };
@@ -58,6 +60,14 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		2A4CD6131F7B428F0011757A /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				2A4CD6141F7B42B40011757A /* Globals.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
 		2A77994C1F75FA3300CB6DC9 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
@@ -89,6 +99,7 @@
 			isa = PBXGroup;
 			children = (
 				2A96C7661F75F4F500D54AB2 /* ProCore GitHub Project */,
+				2A4CD6131F7B428F0011757A /* Helpers */,
 				2A96C7651F75F4F500D54AB2 /* Products */,
 				A667CEBF1F554A3DCD73652F /* Pods */,
 				19A366E063551B9285CC1467 /* Frameworks */,
@@ -262,6 +273,7 @@
 				2A96C76A1F75F4F500D54AB2 /* ViewController.swift in Sources */,
 				2A85A7D61F78AA4300D45E49 /* DiffViewController.swift in Sources */,
 				2A77994F1F75FADE00CB6DC9 /* Router.swift in Sources */,
+				2A4CD6151F7B42B40011757A /* Globals.swift in Sources */,
 				2A96C7681F75F4F500D54AB2 /* AppDelegate.swift in Sources */,
 				2A4CD6121F7A3BB80011757A /* LeftViewController.swift in Sources */,
 				2A85A7D41F77716E00D45E49 /* SplitViewController.swift in Sources */,

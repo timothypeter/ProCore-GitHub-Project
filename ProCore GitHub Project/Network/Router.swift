@@ -7,6 +7,7 @@ import Alamofire
 public enum Router: URLRequestConvertible {
     static let baseURLPath = "https://api.github.com"
     static let githubAcceptStringV3 = "application/vnd.github.v3+json"
+    //var pathToRepos = "/repos/Alamofire/Alamofire/issues" //To provide a default value
     
     case getPullRequests(parameters: Parameters)
     

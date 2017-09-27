@@ -13,6 +13,7 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
     
     //Create an outlet for the TableView
     @IBOutlet var tableView: UITableView!
+    @IBOutlet var activityIndicator: UIActivityIndicatorView!
     
     //The jSON will return an array of dictionaries. This array is to store them for later use
     var arrayOfDictsOfIssues: [Dictionary<String, JSON>] = []
@@ -25,6 +26,8 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         let dict = ["state" : "open"]
         
         var json: JSON = JSON.null
+        
+        self.activityIndicator.startAnimating()
         
         //Testing the call to retrieve pull requests
         Alamofire.request(Router.getPullRequests(parameters: dict)).response {response in
@@ -54,6 +57,8 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
                 print(json)
                 
                 self.tableView.reloadData()
+                
+                self.activityIndicator.stopAnimating()
             }
         }
     }
@@ -64,7 +69,7 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 45;
+        return 75;
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -77,13 +82,15 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
             
             self.jsonDictionaryWithDiff = dictionary
             
-            let titleString = arrayOfDictsOfIssues[indexPath.row]["title"]?.stringValue
-            
-            if let range = prNumber.range(of: "pulls/"){
-                //TODO: Replace with Swift 4 equivalent
-                let newString = prNumber.substring(from: range.upperBound)
-                cell.textLabel?.text = titleString! + " - " + newString
-                cell.textLabel?.numberOfLines = 0
+            if let titleString = arrayOfDictsOfIssues[indexPath.row]["title"]?.stringValue{
+                if let range = prNumber.range(of: "pulls/"){
+                    
+                    //TODO: Replace with Swift 4 equivalent if time permits
+                    let newString = prNumber.substring(from: range.upperBound)
+                    
+                    cell.textLabel?.text = "\(newString) \n" + titleString
+                    cell.textLabel?.numberOfLines = 0
+                }
             }
         }
         
