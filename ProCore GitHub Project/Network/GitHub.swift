@@ -6,6 +6,8 @@
 //  Copyright © 2017 Timothy Peter. All rights reserved.
 //
 
+
+//Mostly for parsing the Diff. Many of classes here are incomplete or unused
 import Foundation
 
 enum GitHubError: Error {
