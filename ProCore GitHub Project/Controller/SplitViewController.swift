@@ -13,6 +13,7 @@ import SwiftyJSON
 class SplitViewController: UIViewController{
     
     var diffInfoAsJSON: JSON = JSON.null
+    @IBOutlet var activityIndicator: UIActivityIndicatorView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
